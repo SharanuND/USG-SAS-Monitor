@@ -1,0 +1,25 @@
+.signUpPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.signUpContent {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signUpForm {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Gap between input fields */
+}

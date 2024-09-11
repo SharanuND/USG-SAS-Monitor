@@ -1,0 +1,111 @@
+
+.usgMenuData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.commandInputBox {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.dropdownIcon {
+    padding: 13px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdownOption {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdownOption:hover {
+    background-color: #f0f0f0;
+}
+
+.commandButton {
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.commandButton:hover {
+    background-color: #0056b3;
+}
+
+.commandButton:active {
+    background-color: #004085;
+}
+
+.responseContainer {
+    
+    margin-top: 20px;
+    text-align: left;
+    width: 70%; /* Adjust width if needed */
+    height: 400px; /* Increased height for more space */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    background-color: #000000; /* Black background */
+    color: #00FF00; /* Green text */
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    overflow-wrap: break-word; /* Ensure long lines wrap */
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.loader {
+    font-size: 1.2em;
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,148 @@
+
+.deviceDetails {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.deviceDetailsContent {
+  flex-grow: 1; /* Take up remaining space */
+  padding: 30px;
+  background-color: #f9f9f9; /* Adjust background if needed */
+
+  h2 {
+    margin-bottom: 10px; /* Space below the device name */
+  }
+
+  .deviceName {
+    margin-bottom: 10px; /* Space below the device name */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make it bold */
+  }
+
+  .deviceConfig {
+    margin-bottom: 20px; /* Space below the device config */
+  }
+
+  .systemInfoContainer {
+    margin-bottom: 20px; /* Space below the system info container */
+  }
+
+  .systemInfoTitle {
+    font-size: 0.875rem; /* Smaller font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 8px; /* Space below the title */
+  }
+
+  .systemInfo {
+    margin-top: 10px; /* Space above the system info */
+    padding: 10px;
+    background-color: #ffffff; /* Background color for the container */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01); /* Add box shadow */
+    max-width: 300px; /* Reduce the width of the container */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .systemInfo div {
+    display: flex;
+    justify-content: space-between; /* Align items to the start and end */
+    margin-bottom: 8px; /* Space between lines */
+  }
+
+  .infoLabel {
+    flex: 1;
+  }
+
+  .infoValue {
+    flex: 1;
+    text-align: right !important; /* Align text to the right */
+    // color: #1976d2; /* Color for the value text */
+  }
+
+  // .backButton {
+  //   display: flex;
+  //   align-items: center;
+  //   margin-bottom: 10px; /* Space below the back button */
+  //   cursor: pointer; /* Indicate that it's clickable */
+   
+  //   font-size: 0.875rem; /* Reduce font size */
+  // }
+
+  // .backButtonIcon {
+  //   font-size: 16px; /* Reduce the size of the icon */
+  // }
+  .backButton {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space below the back button */
+    cursor: pointer; /* Indicate that it's clickable */
+  }
+  
+  .backButtonIcon {
+    font-size: 8px; /* Smaller font size for the icon */
+    padding: 0; /* Remove padding around the icon */
+    margin: 0; /* Remove any default margin */
+    min-width: 20px; /* Set a minimum width if needed */
+    min-height: 20px; /* Set a minimum height if needed */
+  }
+  
+  .backText {
+    margin-left: 2px; /* Space between the icon and text (increased for better spacing) */
+    color: #1976d2; /* Customize text color */
+    &:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+  }
+  
+  .tabsContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Add space around the tabs */
+  }
+  
+  .toggleButtonGroup {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Add space around the toggle buttons */
+  }
+  
+  .toggleButton {
+    flex: 1;
+    text-align: center;
+    padding: 10px 15px; /* Padding inside the toggle buttons */
+    border: 1px solid #ddd; /* Add a border to the toggle buttons */
+    background-color: #f1f1f1; /* Default background color */
+    max-width: 200px; /* Reduce the width of the buttons */
+    margin: 0 5px; /* Add space between the buttons */
+    &:hover {
+      color: #ffffff;
+      background-color: #1565c0; /* Darker blue background color on hover */
+    }
+    &.Mui-selected {
+      background-color: #1976d2 !important; /* Blue background color when selected */
+      color: white !important; /* Text color when selected */
+    }
+  }
+  
+  .dataContent {
+    margin-top: 20px; /* Space above the data content */
+  }
+  
+  .responseContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Green text color for a terminal-like appearance */
+    min-height: 200px; /* Fixed height for the response container */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the height */
+    border-radius: 5px;
+  }
+  
+  .responseText {
+    font-family: 'Courier New', Courier, monospace; /* Terminal-like font */
+    white-space: pre-wrap; /* Preserve whitespace formatting */
+  }
+  
+}

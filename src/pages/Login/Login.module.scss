@@ -1,0 +1,86 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.loginContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.passwordOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -8px;
+}
+
+.showPassword {
+  display: flex;
+  align-items: center;
+  font-size: 10px !important;
+}
+
+.forgotPassword {
+  font-size: 12px !important;
+}
+
+.signupPrompt {
+  text-align: center;
+  font-size: 14px;
+
+  span {
+    margin-right: 5px;
+  }
+
+  a {
+    color: #3f51b5;
+    font-weight: 500;
+  }
+}
+
+.usernameInput {
+  margin-bottom: 4px !important;
+}
+
+.passwordInput {
+  margin-top: 0 !important;
+}
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
